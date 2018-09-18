@@ -1,0 +1,392 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "get_open",
+        "entities": [
+          {
+            "start": 28,
+            "end": 33,
+            "value": "Apple",
+            "entity": "organization"
+          }
+        ],
+        "text": "What's the opening price of Apple?"
+      },
+      {
+        "intent": "get_open",
+        "entities": [
+          {
+            "start": 21,
+            "end": 27,
+            "value": "Google",
+            "entity": "organization"
+          }
+        ],
+        "text": "the opening price of Google"
+      },
+      {
+        "intent": "get_open",
+        "entities": [
+          {
+            "start": 29,
+            "end": 37,
+            "value": "Facebook",
+            "entity": "organization"
+          }
+        ],
+        "text": "Show me the opening price of Facebook."
+      },
+      {
+        "intent": "get_close",
+        "entities": [
+          {
+            "start": 28,
+            "end": 37,
+            "value": "Microsoft",
+            "entity": "organization"
+          }
+        ],
+        "text": "What's the closing price of Microsoft?"
+      },
+      {
+        "intent": "get_close",
+        "entities": [
+          {
+            "start": 29,
+            "end": 36,
+            "value": "ALIBABA",
+            "entity": "organization"
+          }
+        ],
+        "text": "Show me the closing price of ALIBABA."
+      },
+      {
+        "intent": "get_close",
+        "entities": [
+          {
+            "start": 21,
+            "end": 26,
+            "value": "Tesla",
+            "entity": "organization"
+          }
+        ],
+        "text": "the closing price of Tesla"
+      },
+      {
+        "intent": "get_high",
+        "entities": [
+          {
+            "start": 25,
+            "end": 30,
+            "value": "BAIDU",
+            "entity": "organization"
+          }
+        ],
+        "text": "What's the high price of BAIDU?"
+      },
+      {
+        "intent": "get_high",
+        "entities": [
+          {
+            "start": 26,
+            "end": 33,
+            "value": "alibaba",
+            "entity": "organization"
+          }
+        ],
+        "text": "Show me the high price of alibaba."
+      },
+      {
+        "intent": "get_high",
+        "entities": [
+          {
+            "start": 18,
+            "end": 23,
+            "value": "Tesla",
+            "entity": "organization"
+          }
+        ],
+        "text": "the high price of Tesla"
+      },
+      {
+        "intent": "get_low",
+        "entities": [
+          {
+            "start": 24,
+            "end": 27,
+            "value": "IBM",
+            "entity": "organization"
+          }
+        ],
+        "text": "What's the low price of IBM?"
+      },
+      {
+        "intent": "get_low",
+        "entities": [
+          {
+            "start": 25,
+            "end": 29,
+            "value": "AMZN",
+            "entity": "organization"
+          }
+        ],
+        "text": "Show me the low price of AMZN."
+      },
+      {
+        "intent": "get_low",
+        "entities": [
+          {
+            "start": 17,
+            "end": 21,
+            "value": "TSLA",
+            "entity": "organization"
+          }
+        ],
+        "text": "the low price of TSLA"
+      },
+      {
+        "intent": "get_price",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "Amazon",
+            "entity": "organization"
+          }
+        ],
+        "text": "What's the price of Amazon?"
+      },
+      {
+        "intent": "get_price",
+        "entities": [
+          {
+            "start": 21,
+            "end": 25,
+            "value": "AMZN",
+            "entity": "organization"
+          }
+        ],
+        "text": "Show me the price of AMZN."
+      },
+      {
+        "intent": "get_price",
+        "entities": [
+          {
+            "start": 13,
+            "end": 17,
+            "value": "TSLA",
+            "entity": "organization"
+          }
+        ],
+        "text": "the price of TSLA"
+      },
+      {
+        "intent": "get_volume",
+        "entities": [
+          {
+            "start": 21,
+            "end": 28,
+            "value": "WalMart",
+            "entity": "organization"
+          }
+        ],
+        "text": "What's the volume of WalMart?"
+      },
+      {
+        "intent": "get_volume",
+        "entities": [
+          {
+            "start": 22,
+            "end": 26,
+            "value": "AMZN",
+            "entity": "organization"
+          }
+        ],
+        "text": "Show me the volume of AMZN."
+      },
+      {
+        "intent": "get_volume",
+        "entities": [
+          {
+            "start": 14,
+            "end": 18,
+            "value": "TSLA",
+            "entity": "organization"
+          }
+        ],
+        "text": "the volume of TSLA"
+      },
+      {
+        "intent": "get_changePercent",
+        "entities": [
+          {
+            "start": 29,
+            "end": 38,
+            "value": "Coca-Cola",
+            "entity": "organization"
+          }
+        ],
+        "text": "What's the change percent of Coca-Cola?"
+      },
+      {
+        "intent": "get_changePercent",
+        "entities": [
+          {
+            "start": 30,
+            "end": 34,
+            "value": "AMZN",
+            "entity": "organization"
+          }
+        ],
+        "text": "Show me the change percent of AMZN."
+      },
+      {
+        "intent": "get_changePercent",
+        "entities": [
+          {
+            "start": 22,
+            "end": 26,
+            "value": "TSLA",
+            "entity": "organization"
+          }
+        ],
+        "text": "the change percent of TSLA"
+      },
+      {
+        "intent": "historical_price_movements",
+        "entities": [
+          {
+            "start": 47,
+            "end": 52,
+            "value": "Intel",
+            "entity": "organization"
+          },
+          {
+            "start": 58,
+            "end": 68,
+            "value": "2018,08,01",
+            "entity": "date"
+          },
+          {
+            "start": 72,
+            "end": 82,
+            "value": "2018,09,10",
+            "entity": "date"
+          }
+        ],
+        "text": "Show me the historical price movements plot of Intel from 2018,08,01 to 2018,09,10"
+      }
+    ],
+    "regex_features": [
+      {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "Apple",
+        "synonyms": [
+          "APPLE",
+          "AAPL"
+        ]
+      },
+      {
+        "value": "Google",
+        "synonyms": [
+          "GOOGLE",
+          "GOOG"
+        ]
+      },
+      {
+        "value": "Facebook",
+        "synonyms": [
+          "FACEBOOK",
+          "FB"
+        ]
+      },
+      {
+        "value": "Microsoft",
+        "synonyms": [
+          "MICROSOFT",
+          "MSFT"
+        ]
+      },
+      {
+        "value": "ALIBABA",
+        "synonyms": [
+          "alibaba",
+          "Alibaba",
+          "BABA"
+        ]
+      },
+      {
+        "value": "Tesla",
+        "synonyms": [
+          "TESLA",
+          "TSLA"
+        ]
+      },
+      {
+        "value": "BAIDU",
+        "synonyms": [
+          "Baidu",
+          "baidu",
+          "BIDU"
+        ]
+      },
+      {
+        "value": "Amazon",
+        "synonyms": [
+          "AMAZON",
+          "AMZN"
+        ]
+      },
+      {
+        "value": "WalMart",
+        "synonyms": [
+          "walmat",
+          "WALMAT",
+          "WMT"
+        ]
+      },
+      {
+        "value": "AT&T",
+        "synonyms": [
+          "T"
+        ]
+      },
+      {
+        "value": "Coca-Cola",
+        "synonyms": [
+          "coca-cola",
+          "CCE"
+        ]
+      },
+      {
+        "value": "Intel",
+        "synonyms": [
+          "intel",
+          "INTC"
+        ]
+      }
+    ]
+  }
+}

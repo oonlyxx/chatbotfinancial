@@ -1,0 +1,678 @@
+
+{
+    "rasa_nlu_data": {
+      "regex_features":[
+        {
+          "name": "greet",
+          "pattern": "hey[^\\s]*"
+        }
+      ],
+      "entity_synonyms": [
+        {
+          "value": "AAPL",
+          "synonyms": ["APPLE", "Apple"]
+        },
+        {
+          "value": "GOOG",
+          "synonyms": ["GOOGLE", "Google"]
+        },
+        {
+          "value": "FB",
+          "synonyms": ["FACEBOOK", "Facebook"]
+        },
+        {
+          "value": "MSFT",
+          "synonyms": ["MICROSOFT", "Microsoft"]
+        },
+        {
+          "value": "BABA",
+          "synonyms": ["alibaba", "Alibaba", "ALIBABA"]
+        },
+        {
+          "value": "TSLA",
+          "synonyms": ["TESLA", "Tesla"]
+        },
+        {
+          "value": "BIDU",
+          "synonyms": ["Baidu", "baidu", "BAIDU"]
+        },
+        {
+          "value": "AMZN",
+          "synonyms": ["AMAZON", "Amazon"]
+        },
+        {
+          "value": "WMT",
+          "synonyms": ["walmat", "WALMAT", "WalMart"]
+        },
+        {
+          "value": "T",
+          "synonyms": ["AT&T"]
+        },
+        {
+          "value": "CCE",
+          "synonyms": ["coca-cola", "Coca-Cola"]
+        },
+        {
+          "value": "INTC",
+          "synonyms": ["intel", "Intel"]
+        }
+      ],
+      "common_examples": [
+        {
+          "text": "hey",
+          "intent": "greet",
+          "entities": []
+        },
+        {
+          "text": "hey there",
+          "intent": "greet",
+          "entities": []
+        },
+        {
+          "text": "hello",
+          "intent": "greet",
+          "entities": []
+        },
+        {
+          "text": "hi",
+          "intent": "greet",
+          "entities": []
+        },
+        {
+          "text": "What's the opening price of Apple?",
+          "intent": "opening price",
+          "entities": [
+            {
+              "start": 28,
+              "end": 33,
+              "value": "Apple",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "the opening price of Google",
+          "intent": "opening price",
+          "entities": [
+            {
+              "start":21,
+              "end": 27,
+              "value": "Google",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "opening price of Google",
+          "intent": "opening price",
+          "entities": [
+            {
+              "start":17,
+              "end": 23,
+              "value": "Google",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "opening price",
+          "intent": "opening price",
+          "entities": []
+        },
+        {
+          "text": "opening price of company",
+          "intent": "opening price",
+          "entities": []
+        },
+        {
+          "text": "Show me the opening price",
+          "intent": "opening price",
+          "entities": []
+        },
+        {
+          "text": "opening price",
+          "intent": "opening price",
+          "entities": []
+        },
+        {
+          "text": "This is the opening price",
+          "intent": "opening price",
+          "entities": []
+        },
+          {
+          "text": "Here is the opening price",
+          "intent": "opening price",
+          "entities": []
+        },
+        {
+          "text": "the opening price is for you.",
+          "intent": "opening price",
+          "entities": []
+        },
+        {
+          "text": "Show me the opening price of Facebook.",
+          "intent": "opening price",
+          "entities": [
+            {
+              "start": 29,
+              "end": 37,
+              "value": "Facebook",
+              "entity": "organization"
+            }
+          ]
+        },
+
+        {
+          "text": "What's the closing price of Microsoft?",
+          "intent": "closing price",
+          "entities": [
+            {
+              "start":28,
+              "end": 37,
+              "value": "Microsoft",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "Show me the closing price of ALIBABA.",
+          "intent": "closing price",
+          "entities": [
+            {
+              "start": 29,
+              "end": 36,
+              "value": "ALIBABA",
+              "entity": "organization"
+            }
+          ]
+        },
+         {
+          "text": "I want the closing price of TSLA.",
+          "intent": "closing price",
+          "entities": [
+            {
+              "start": 28,
+              "end": 32,
+              "value": "TSLA",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "I need the closing price of TSLA.",
+          "intent": "closing price",
+          "entities": [
+            {
+              "start": 28,
+              "end": 32,
+              "value": "TSLA",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "Tell me the closing price of TSLA.",
+          "intent": "closing price",
+          "entities": [
+            {
+              "start": 29,
+              "end": 33,
+              "value": "TSLA",
+              "entity": "organization"
+            }
+          ]
+        },
+
+        {
+          "text": "the closing price of Tesla",
+          "intent": "closing price",
+          "entities": [
+            {
+              "start":21,
+              "end": 26,
+              "value": "Tesla",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "woo!the closing price",
+          "intent": "closing price",
+          "entities": []
+        },
+        {
+          "text": "the closing price is here",
+          "intent": "closing price",
+          "entities": []
+        },
+        {
+          "text": "I can give you the closing price",
+          "intent": "closing price",
+          "entities": []
+        },
+        {
+          "text": "closing price of Tesla",
+          "intent": "closing price",
+          "entities": [
+            {
+              "start":17,
+              "end": 22,
+              "value": "Tesla",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "closing price",
+          "intent": "closing price",
+          "entities": []
+        },
+        {
+          "text": "What's the high price of BAIDU?",
+          "intent": "closing price",
+          "entities": [
+            {
+              "start": 25,
+              "end": 30,
+              "value": "BAIDU",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "Show me the high price of alibaba.",
+          "intent": "high price",
+          "entities": [
+            {
+              "start": 26,
+              "end": 33,
+              "value": "alibaba",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "the high price of Tesla",
+          "intent": "high price",
+          "entities": [
+            {
+              "start":18,
+              "end": 23,
+              "value": "Tesla",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "There is the high price",
+          "intent": "high price",
+          "entities": []
+        },
+          {
+           "text": "the high price is coming",
+           "intent": "high price",
+           "entities": []
+        },
+          {
+           "text": "the high price is yours",
+           "intent": "high price",
+           "entities": []
+        },
+        {
+          "text": "Tell me the high price of alibaba.",
+          "intent": "high price",
+          "entities": [
+            {
+              "start": 26,
+              "end": 33,
+              "value": "alibaba",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "I need the high price of alibaba.",
+          "intent": "high price",
+          "entities": [
+            {
+              "start": 25,
+              "end": 32,
+              "value": "alibaba",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "What's the low price of IBM?",
+          "intent": "low price",
+          "entities": [
+            {
+              "start": 24,
+              "end": 27,
+              "value": "IBM",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "I need low price of IBM?",
+          "intent": "low price",
+          "entities": [
+            {
+              "start":20 ,
+              "end": 23,
+              "value": "IBM",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "I want the low price of IBM?",
+          "intent": "low price",
+          "entities": [
+            {
+              "start": 20,
+              "end": 23,
+              "value": "IBM",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "Tell me the low price of IBM?",
+          "intent": "low price",
+          "entities": [
+            {
+              "start": 25,
+              "end": 28,
+              "value": "IBM",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "Tell the low price of IBM?",
+          "intent": "low price",
+          "entities": [
+            {
+              "start": 22,
+              "end": 25,
+              "value": "IBM",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "low price of IBM",
+          "intent": "low price",
+          "entities": [
+            {
+              "start": 13,
+              "end": 16,
+              "value": "IBM",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "Show me the low price of AMZN.",
+          "intent": "low price",
+          "entities": [
+            {
+              "start": 25,
+              "end": 29,
+              "value": "AMZN",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "the low price of TSLA",
+          "intent": "low price",
+          "entities": [
+            {
+              "start":17,
+              "end": 21,
+              "value": "TSLA",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "What's the price of Amazon?",
+          "intent": "get_price",
+          "entities": [
+            {
+              "start":20,
+              "end": 26,
+              "value": "Amazon",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "Show me the price of AMZN.",
+          "intent": "price",
+          "entities": [
+            {
+              "start": 21,
+              "end": 25,
+              "value": "AMZN",
+              "entity": "organization"
+            }
+          ]
+        },
+         {
+          "text": "the price of TSLA",
+          "intent": "price",
+          "entities": [
+            {
+              "start":13,
+              "end": 17,
+              "value": "TSLA",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "price of TSLA",
+          "intent": "price",
+          "entities": [
+            {
+              "start": 9,
+              "end": 13,
+              "value": "TSLA",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "What's the volume of WalMart?",
+          "intent": "volume",
+          "entities": [
+            {
+              "start": 21,
+              "end": 28,
+              "value": "WalMart",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "Show me the volume of AMZN.",
+          "intent": "volume",
+          "entities": [
+            {
+              "start": 22,
+              "end": 26,
+              "value": "AMZN",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "the volume of TSLA",
+          "intent": "volume",
+          "entities": [
+            {
+              "start":14,
+              "end": 18,
+              "value": "TSLA",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "What's the change percent of Coca-Cola?",
+          "intent": "change percent",
+          "entities": [
+            {
+              "start": 29,
+              "end": 38,
+              "value": "Coca-Cola",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "Show me the change percent of AMZN.",
+          "intent": "change percent",
+          "entities": [
+            {
+              "start": 30,
+              "end": 34,
+              "value": "AMZN",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "the change percent of TSLA",
+          "intent": "change percent",
+          "entities": [
+            {
+              "start":22,
+              "end": 26,
+              "value": "TSLA",
+              "entity": "organization"
+            }
+          ]
+        },
+        {
+          "text": "Show me the historical price movements plot of Intel from 2018,08,01 to 2018,09,10",
+          "intent": " historical_price_movements ",
+          "entities": [
+            {
+              "start": 47,
+              "end":52 ,
+              "value": "Intel",
+              "entity": "organization"
+            },
+            {
+              "start": 58,
+              "end": 68,
+              "value": "2018,08,01",
+              "entity": "date1"
+            },
+            {
+              "start": 72,
+              "end": 82,
+              "value": "2018,09,10",
+              "entity": "date2"
+            }
+          ]
+        },
+        {
+          "text": "I want the historical price movements plot of Intel from 2018,08,01 to 2018,09,10",
+          "intent": " historical_price_movements ",
+          "entities": [
+            {
+              "start": 46,
+              "end":51 ,
+              "value": "Intel",
+              "entity": "organization"
+            },
+            {
+              "start": 57,
+              "end": 67,
+              "value": "2018,08,01",
+              "entity": "date1"
+            },
+            {
+              "start": 71,
+              "end": 81,
+              "value": "2018,09,10",
+              "entity": "date2"
+            }
+          ]
+        },
+        {
+          "text": "the historical price movements plot of Intel from 2018,08,01 to 2018,09,10",
+          "intent": " historical_price_movements ",
+          "entities": [
+            {
+              "start": 39,
+              "end":44 ,
+              "value": "Intel",
+              "entity": "organization"
+            },
+            {
+              "start": 50,
+              "end": 60,
+              "value": "2018,08,01",
+              "entity": "date1"
+            },
+            {
+              "start": 64,
+              "end": 74,
+              "value": "2018,09,10",
+              "entity": "date2"
+            }
+          ]
+        },
+        {
+          "text": "I want the historical price movements plot of Intel from 2017,09,01 to 2018,09,10",
+          "intent": " historical_price_movements ",
+          "entities": [
+            {
+              "start": 46,
+              "end":51 ,
+              "value": "Intel",
+              "entity": "organization"
+            },
+            {
+              "start": 57,
+              "end": 67,
+              "value": "2017,09,01",
+              "entity": "date1"
+            },
+            {
+              "start": 71,
+              "end": 81,
+              "value": "2018,09,10",
+              "entity": "date2"
+            }
+          ]
+        },
+        {
+          "text": "move from 2018,08,01 to 2018,09,10",
+          "intent": " historical_price_movements ",
+          "entities": [
+            {
+              "start": 10,
+              "end": 20,
+              "value": "2018,08,01",
+              "entity": "date1"
+            },
+            {
+              "start": 24,
+              "end": 34,
+              "value": "2018,09,10",
+              "entity": "date2"
+            }
+          ]
+        }
+      ]
+    }
+}
+

@@ -1,0 +1,93 @@
+{
+    "rasa_nlu_data": {
+      "regex_features":[
+        {
+          "name": "greet",
+          "pattern": "hey[^\\s]*"
+        }
+      ],
+      "common_examples": [
+        {
+          "text": "hey",
+          "intent": "greet",
+          "entities": []
+        },
+        {
+          "text": "hey there",
+          "intent": "greet",
+          "entities": []
+        },
+        {
+          "text": "hello",
+          "intent": "greet",
+          "entities": []
+        },
+        {
+          "text": "hi",
+          "intent": "greet",
+          "entities": []
+        },
+        {
+        "text": "I am looking for asian fusion food",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 29,
+            "value": "asian fusion",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "I am looking a restaurant in 29432",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 29,
+            "end": 34,
+            "value": "29432",
+            "entity": "location"
+          }
+        ]
+      },
+       {
+        "text": "2018.01.05",
+        "intent": "inform_date",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "2018.01.05",
+            "entity": "date"
+          }
+        ]
+      },
+       {
+          "text": "the opening price of Google",
+          "intent": "get_open",
+          "entities": [
+            {
+              "start":21,
+              "end": 27,
+              "value": "Google",
+              "entity": "org"
+            }
+          ]
+        },
+        {
+          "text": "What's the high price of BAIDU?",
+          "intent": "get_high",
+          "entities": [
+            {
+              "start": 25,
+              "end": 30,
+              "value": "BAIDU",
+              "entity": "organization"
+            }
+          ]
+        }
+
+      ]
+    }
+}
